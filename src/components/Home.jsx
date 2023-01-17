@@ -11,18 +11,18 @@ const Home = () => {
   return (
     <div name="home" className="w-full h-screen">
       <Navbar onSetBg={setBg} />
-      <div className="w-full h-full absolute shadow-md bg-gradient-to-b from-transparent to-zinc-200">
+      <div className="w-full h-screen absolute shadow-md bg-gradient-to-b from-transparent to-zinc-200">
         {bgDark ? (
           <img
             src={on}
             alt="/"
-            className="w-full h-full object-cover mix-blend-overlay"
+            className="w-full h-screen object-cover mix-blend-overlay"
           />
         ) : (
           <img
             src={off}
             alt="/"
-            className="w-full h-full object-cover mix-blend-overlay"
+            className="w-full h-screen object-cover mix-blend-overlay"
           />
         )}
       </div>
