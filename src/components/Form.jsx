@@ -93,13 +93,13 @@ const Form = () => {
     setText("");
   };
   return (
-    <div className="grid grid-cols-4">
+    <div className="sm:grid sm:grid-cols-4">
       <form onSubmit={submitHandler} className="col-span-2 col-start-2">
         <div className="grid grid-cols-2 justify-center gap-4 h-10 my-4 ">
           <input
             type="email"
             name="UserEmail"
-            placeholder="Enter Your Email"
+            placeholder="Your Email"
             onChange={emailChangeHandler}
             value={email}
           ></input>

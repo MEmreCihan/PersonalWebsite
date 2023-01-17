@@ -12,12 +12,12 @@ const Contact = () => {
         </p>
         <h1 className="text-sky-800 font-bold text-4xl my-4">Contact Me</h1>
       </div>
-      <Form />
+      <Form/>
       <div>
         <div className="grid grid-cols-4 ">
           <hr className="bg-zinc-400 h-1 col-start-2 col-span-2" />
         </div>
-        <div className="grid grid-cols-4">
+        <div className="sm:grid sm:grid-cols-4">
           <div className="flex justify-between col-start-2 col-span-2 my-6 h-16">
             <div className="flex items-center">
               <p className="text-xl">Copyright 2023 ©</p>

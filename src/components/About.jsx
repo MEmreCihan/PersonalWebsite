@@ -4,11 +4,11 @@ import myCv from "../assets/my-cv.pdf";
 
 const About = () => {
   return (
-    <div name="about" className="md:grid md:grid-cols-2 p-4  drop-shadow-lg dark:bg-zinc-800 w-full h-full">
+    <div name="about" className="md:grid md:grid-cols-2 p-4 gap-2 drop-shadow-lg dark:bg-zinc-800 w-full h-full">
       <div className="flex justify-center items-center">
         <img src={myImg} alt="/" className="rounded-full h-[60%]"></img>
       </div>
-      <div className="text-left grid h-screen  place-content-center">
+      <div className="text-left grid h-screen">
         <p className="text-zinc-400 font-extralight text-xl dark:text-white my-2">Who am I?</p>
         <h2 className="text-sky-800 font-bold text-4xl my-2">About Me</h2>
         <p className="font-light text-zinc-500 dark:text-white text-lg my-4">

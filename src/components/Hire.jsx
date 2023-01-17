@@ -17,7 +17,7 @@ const Hire = () => {
 
   return (
     <div name="hire" className="flex justify-around bg-sky-700 py-6 ">
-      <div className="">
+      <div className="px-2">
         <p className="text-white font-extrabold text-2xl">
           Want to work with me?
         </p>
@@ -25,7 +25,7 @@ const Hire = () => {
           Always feel Free to Contact & Hire me
         </p>
       </div>
-      <div className="flex">
+      <div className="flex px-2">
         <button
           onClick={clickHandler}
           className="w-24 bg-white text-sky-700 font-bold hover:bg-zinc-400"

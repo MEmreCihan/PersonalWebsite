@@ -24,7 +24,7 @@ const Home = () => {
         ></img>
       </div>
       <div className="grid relative h-screen place-items-center">
-        <div className="place-content-center">
+        <div className="p-4">
           <h1 className="text-6xl font-bold text-gray-700 font-serif my-2">
             Hi!
           </h1>
