@@ -1,4 +1,4 @@
-import {useState} from "react";
+import { useState } from "react";
 import Navbar from "./Navbar";
 import off from "../assets/off.jpg";
 import on from "../assets/on.jpg";
@@ -7,21 +7,24 @@ const Home = () => {
   const [bgDark, setBgDark] = useState(false);
   const setBg = () => {
     setBgDark(!bgDark);
-  }
+  };
   return (
     <div name="home" className="w-full h-screen">
-      <Navbar onSetBg={setBg}/>
+      <Navbar onSetBg={setBg} />
       <div className="w-full h-full absolute shadow-md bg-gradient-to-b from-transparent to-zinc-200">
-        {bgDark && <img
-          src={on}
-          alt="/"
-          className="w-full h-full object-cover mix-blend-overlay "
-        ></img>}
-        <img
-          src={off}
-          alt="/"
-          className="w-full h-full object-cover mix-blend-overlay "
-        ></img>
+        {bgDark ? (
+          <img
+            src={on}
+            alt="/"
+            className="w-full h-full object-cover mix-blend-overlay"
+          />
+        ) : (
+          <img
+            src={off}
+            alt="/"
+            className="w-full h-full object-cover mix-blend-overlay"
+          />
+        )}
       </div>
       <div className="grid relative h-screen place-items-center">
         <div className="p-4">

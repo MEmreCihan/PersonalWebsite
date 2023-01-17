@@ -12,6 +12,6 @@
     }
 
     input {
-        @apply w-full placeholder:px-2 placeholder:italic placeholder:text-xl text-2xl border-2 rounded-lg outline-zinc-400 outline-1
+        @apply w-full placeholder:px-2 placeholder:italic placeholder:text-xl text-base sm:text-2xl border-2 rounded-lg outline-zinc-400 outline-1
     }
 }
