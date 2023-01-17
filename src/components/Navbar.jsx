@@ -21,9 +21,12 @@ const Navbar = (props) => {
   const toggleTheme = () => {
     setTheme(theme === "dark" ? "light" : "dark");
     props.onSetBg();
-    handleClick();
   };
   const handleClick = () => setNav(!nav);
+  const specialClick = () => {
+    handleClick();
+    toggleTheme();
+  }
   return (
     <div className="w-screen h-[80px] z-10 bg-zinc-200/80 dark:bg-zinc-900/80 dark:text-white dark:hover:bg-black/90 fixed drop-shadow-lg hover:bg-sky-800/90 hover:text-white text-xl">
       <div className="px-2 flex justify-between items-center w-full h-full">
@@ -79,7 +82,7 @@ const Navbar = (props) => {
       >
         <li className="border-b-2 border-zinc-300 w-full">
           <div className="flex justify-center">
-            <LightBulbIcon onClick={toggleTheme} className="w-10 m-2" />
+            <LightBulbIcon onClick={specialClick} className="w-10 m-2" />
           </div>
         </li>
         <li className="border-b-2 border-zinc-300 w-full">
